@@ -68,6 +68,10 @@ it("verify data", async (done) => {
   done();
 });
 
+it("test failing", async () => {
+  expect(false).toBeTruthy();
+});
+
 afterAll((done) => {
   server.close();
   done();
